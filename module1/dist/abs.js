@@ -14,19 +14,16 @@ class Car1 {
         console.log('emni dilam');
     }
 }
+const getCar = (param) => {
+    param.startEngine();
+    param.stopEngine();
+    param.move();
+};
 const toyota = new Car1();
-toyota.startEngine();
+getCar(toyota);
 // abstract
 // idea
 class Car2 {
-    startEngine() {
-    }
-    stopEngine() {
-        console.log('stop engine');
-    }
-    move() {
-        console.log('move the car');
-    }
     test() {
         console.log('emni dilam');
     }
